@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content=" width=device-width initial-scale=1.0"> 
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="page">
+            <header>
+                <h1 class="titulo-principal">"The calculator"</h1>
+            </header>
+            <main>
+                <div class="sobre">
+                    <p>Essa calculadora foi criada utilizando HTML, Css e JavaScript, visando colocar em 
+                       prática alguns conhecimentos e aprender coisas novas</p>
+                </div>
+                <div class="calculadora">
+                    <h1>Calculadora</h1>
+                    <p id="resultado"></p>
+                    <table>
+                        <tr>
+                            <td><button onclick="clean()">C</button></td>
+                            <td><button onclick="back()"><img id="icon-excluir" src="imgs/excluir.png" alt=""></button></td>
+                            <td><button onclick="insert('/')">÷</button></td>
+                            <td><button onclick="insert('*')">x</button></td>
+                        </tr>
+
+                        <tr>
+                            <td><button onclick="insert('7')">7</button></td>
+                            <td><button onclick="insert('8')">8</button></td>
+                            <td><button onclick="insert('9')">9</button></td>
+                            <td><button onclick="insert('-')">-</button></td>
+                        </tr>
+
+                        <tr>
+                            <td><button onclick="insert('4')">4</button></td>
+                            <td><button onclick="insert('5')">5</button></td>
+                            <td><button onclick="insert('6')">6</button></td>
+                            <td><button onclick="insert('+')">+</button></td>
+                        </tr>
+
+                        <tr>
+                            <td><button onclick="insert('1')">1</button></td>
+                            <td><button onclick="insert('2')">2</button></td>
+                            <td><button onclick="insert('3')">3</button></td>
+                            <td rowspan="2"><button style="height: 106px;" onclick="calcular()">=</button></td> <!--Expandir para duaas linhas-->
+                        </tr>
+
+                        <tr>
+                            <td colspan="2"><button onclick="insert('0')" style="width: 106px;">0</button></td> <!--Expandir para duas colunas-->
+                            <td><button onclick="insert('.')">.</button></td>
+                        </tr>
+
+                    </table>
+                </div>
+            </main>
+        </div>
+    </body>
+    <footer>
+        <h4>Feito com ♥ por Gabriella de Lima Araujo</h4>
+    </footer>
+</html>
